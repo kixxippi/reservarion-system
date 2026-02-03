@@ -8,7 +8,6 @@ import lombok.Getter;
 import lombok.ToString;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @Getter
 @AllArgsConstructor
@@ -19,6 +18,6 @@ public class Reservation {
     private final Long userId;
     private final Long roomId;
     private final LocalDate startDate;
-    private final LocalDateTime endDate;
+    private final LocalDate endDate;
     private final ReservationStatus status;
 }
