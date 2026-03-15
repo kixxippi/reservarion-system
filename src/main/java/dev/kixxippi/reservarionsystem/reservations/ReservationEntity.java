@@ -1,4 +1,4 @@
-package dev.kixxippi.reservarionsystem;
+package dev.kixxippi.reservarionsystem.reservations;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -16,7 +16,7 @@ public class ReservationEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "user_id")
+    @Column(name = "user_id", nullable = false )
     private Long userId;
 
     @Column(name = "room_id")
